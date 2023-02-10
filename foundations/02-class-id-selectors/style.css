@@ -1,0 +1,14 @@
+p {
+    background-color: pink;
+}
+#second {
+    color: blue;
+    font-size: 36px;
+}
+* {
+    font-family: "Arial", "Verdana", "Trebuchet", sans-serif;
+}
+.third {
+    background-color: aquamarine;
+    font-weight: bold;
+}

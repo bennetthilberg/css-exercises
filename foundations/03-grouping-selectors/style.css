@@ -1,0 +1,9 @@
+.first,.second{
+    color: red;
+}
+.first{
+    background: yellow;
+}
+.second{
+    background: green;
+}
