@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  display: block;
 }
 
 img {
@@ -7,20 +8,24 @@ img {
   height: 100px;
 }
 
-.title {
+h1 {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+  width: 100%;
 }
 
-/* do not edit this footer */
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 52px;
+.plants {
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  background: #eee;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.barberry, .chilli, .pepper, .saffron{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
