@@ -32,13 +32,27 @@ button {
   border: 1px solid black;
   border-radius: 10px;
   position: fixed;
-  top: 50%;
+  top: -15%;
   left: 50%;
+  
   transform-origin: center;
   transform: translate(-50%, -50%);
   pointer-events: none;
   opacity: 0%;
   text-align: center;
+}
+.popup-modal.show{
+  position: fixed;
+  animation: 0.4s slide-down 1;
+  opacity: 100%;
+}
+@keyframes slide-down{
+  from{
+    top: -15%;
+  }
+  to{
+    top: 50%;
+  }
 }
 .popup-modal p {
   margin-bottom: 24px
@@ -50,6 +64,7 @@ button {
   inset: 0;
   background: #000;
   opacity: 0%;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .popup-modal.show {
